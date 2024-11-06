@@ -1212,13 +1212,16 @@
 
 //=====================================================
 
+//class work
+
+
 
 let arr = [23,17,11,9,12,18,12,8,12,19,11,17,8,8,23]
 
 //one 
 let sorted = arr.sort( (a,b)=> a-b)
 console.log(sorted.splice(8,1))
-// console.log(sorted)
+console.log(sorted)
 
 //two
 
@@ -1226,11 +1229,34 @@ console.log(sorted.splice(8,1))
 // console.log(add /14)
 
 //three
-arr.map((element,index)=> element*100/25)
-console.log( arr.map((element,index)=> element*100/25))
+// arr.map((element,index)=> element*100/25)
+// console.log( arr.map((element,index)=> element*100/25))
 
 //four
+let medianDy = arr.sort((a,b)=> a-b)
+let index1
 
+let newIndex
+for(let i=0;i<arr.length;i++){
+    if(arr.length % 2 !== 0){
+      index1 = (arr.length/2) - 0.5
+      console.log(arr[index1])
+    }
+    else if(arr.length % 2 === 0){
+        index1 = (arr.length/2)
+        newIndex = (index1 + ((index1)+1))/2
+        console.log(arr[newIndex])
+    }
+    }
+
+//five
+ function percentageValue(array,baseScore){
+    let output = array.map((el,i,arr)=> (el/baseScore)*100 )
+    
+    return output
+ }
+
+console.log(percentageValue([23,17,11,9,12,18,12,8,12,19,11,17,8,8,23],23))
 
 
 
