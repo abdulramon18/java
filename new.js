@@ -1215,17 +1215,21 @@
 
 let arr = [23,17,11,9,12,18,12,8,12,19,11,17,8,8,23]
 
+//one 
+let sorted = arr.sort( (a,b)=> a-b)
+console.log(sorted.splice(8,1))
+// console.log(sorted)
 
-// arr.sort( (a,b)=> a-b)
-// arr.splice([8,1])
-// console.log(arr)
+//two
 
+// let add = arr.reduce((acrr, cv)=>acrr + cv,0)
+// console.log(add /14)
 
+//three
+arr.map((element,index)=> element*100/25)
+console.log( arr.map((element,index)=> element*100/25))
 
-
-
-let add = arr.reduce((acrr, cv)=>acrr + cv,0)
-console.log(add /14)
+//four
 
 
 
