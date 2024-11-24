@@ -1216,12 +1216,12 @@
 
 
 
-let arr = [23,17,11,9,12,18,12,8,12,19,11,17,8,8,23]
+// let arr = [23,17,11,9,12,18,12,8,12,19,11,17,8,8,23]
 
 //one 
-let sorted = arr.sort( (a,b)=> a-b)
-console.log(sorted.splice(8,1))
-console.log(sorted)
+// let sorted = arr.sort( (a,b)=> a-b)
+// console.log(sorted.splice(8,1))
+// console.log(sorted)
 
 //two
 
@@ -1233,39 +1233,90 @@ console.log(sorted)
 // console.log( arr.map((element,index)=> element*100/25))
 
 //four
-let medianDy = arr.sort((a,b)=> a-b)
-let index1
+// let medianDy = arr.sort((a,b)=> a-b)
+// let index1
+// // let index2
+// let newIndex
+// for(let i=0;i<arr.length;i++){
+//     if(arr.length % 2 !== 0){
+//       index1 = (arr.length/2) - 0.5
+//     //   console.log(arr[index1])
+//     }
+//     else if(arr.length % 2 === 0){
+//         index1 = (arr.length/2)
+//         newIndex = (arr[index1 - 1] + arr[index1])/2
+//         // console.log(newIndex)
+//     }
+//     }
 
-let newIndex
-for(let i=0;i<arr.length;i++){
-    if(arr.length % 2 !== 0){
-      index1 = (arr.length/2) - 0.5
-      console.log(arr[index1])
-    }
-    else if(arr.length % 2 === 0){
-        index1 = (arr.length/2)
-        newIndex = (index1 + ((index1)+1))/2
-        console.log(arr[newIndex])
-    }
-    }
-
-//five
- function percentageValue(array,baseScore){
-    let output = array.map((el,i,arr)=> (el/baseScore)*100 )
+// //five
+//  function percentageValue(array,baseScore){
+//     let output = array.map((el,i,arr)=> (el/baseScore)*100 )
     
-    return output
- }
+//     return output
+//  }
 
-console.log(percentageValue([23,17,11,9,12,18,12,8,12,19,11,17,8,8,23],23))
-
-
+// console.log(percentageValue([23,17,11,9,12,18,12,8,12,19,11,17,8,8,23],23))
 
 
 
 
+// let names = "trump"
+// let country = "usa"
+// let position = "president"
+// console.log(`i am ${names} , and i and the ${position} of the ${country.toUpperCase()}`) 
 
 
 
+
+
+
+// 08/11/2024
+
+
+
+// arr.forEach((element, index, array)=> {
+// return
+// })
+
+
+// var twoSum = function(nums, target) {
+// 	let targetNum = []
+//     for(let i = 0; i <nums.length; i++){
+// 	if(nums[1]+ nums[i + 1]=== target){
+// 		targetNum.push(i)
+// 		targetNum.push(i +1)
+ 
+// 	}
+//  }
+// return targetNum
+// };
+
+// console.log(twoSum([2,1,2,3,4,6,7,8,8,4,3,3],8))
+
+
+
+var searchInsert = function(nums, target) {
+    let one = 0
+    let two = nums.length - 1
+    
+    while (one <= two) {
+        const mid = Math.floor((one + two) / 2)
+        
+        if (nums[mid] === target) {
+            return mid
+        } else if (nums[mid] < target) {
+            one = mid + 1
+        } else {
+            two = mid - 1
+        }
+    }
+    
+    return one
+
+    
+}
+console.log(searchInsert([1, 2, 3, 5, 6,], 4))
 
 
 
