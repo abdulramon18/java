@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Document</title>
-</head>
-<body>
-	<script>
+
 		let sentence = "the quick brown fox jumps over the lazy dog?"
         let add = "Does,"
 
@@ -32,7 +26,3 @@
 		let word = "takeoverO"
 		// let search = "O"
 		console.log(word.indexOf("O"))
-
-	</script>
-</body>
-</html>

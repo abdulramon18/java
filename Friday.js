@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
 
-	<title>Document</title>
-</head>
-<body>
-	<script>
 		// let amount = prompt("Enter total amount") 
 
 		// let modeOfPayment = prompt("How do u want to pay")
@@ -35,9 +28,3 @@
 				}else{
 					console.log('invalid password')
 				}
-	</script>
-
-
-	
-</body>
-</html>

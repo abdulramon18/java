@@ -604,29 +604,37 @@ let addition = (a,b,c, ...more)=>{
 
 // 5>2 ? console.log("yes") : console.log("no")
 
-let firstname = 'abdulramon'
- let  lastname = 'gbotemi'
- let surname = 'adedokun'
- let  email = 'abdulramon@gmail.com'
-console.log(`my name is ${firstname.toUpperCase()} ${lastname.toUpperCase()} and my surname is ${surname.toUpperCase()} while my email is ${email}`)
+// let firstname = 'abdulramon'
+//  let  lastname = 'gbotemi'
+//  let surname = 'adedokun'
+//  let  email = 'abdulramon@gmail.com'
+// console.log(`my name is ${firstname.toUpperCase()} ${lastname.toUpperCase()} and my surname is ${surname.toUpperCase()} while my email is ${email}`)
 
 
-let searchInsert = function(nums, target) {
-    for(i=0; i<nums.length; i++){
-        if(nums[i]=== target) {
-            return i
-        }
-    }
-    for(i=0; i<nums.length; i++){
-        if((nums[i] < target && nums[i+1] > target)) {
-            return i+1
-        }else if(target > nums[nums.length-1]){
-            return nums.length
-        }
-        else {
-            return 0
-        }
-    
-}
 
-};
+//   let score  =[2,4,10,8]
+// if (score.length % 2 !== 0){
+//     console.log(it is odd)
+// }else{
+//     console.log(it is even)
+// }
+
+// let score  =[0,2,4,6]
+// score.length % 2!==0? console.log('it is odd') : console.log('it is even')
+
+let dateToday = new Date()
+let date = dateToday.getDate() + ' / ' + dateToday.getMonth() + ' / ' + dateToday.getFullYear()
+console.log(date)
+console.log(dateToday.getMinutes())
+
+// console.log(dateToday.getDate())
+// console.log(dateToday.getMonth())
+// console.log(dateToday.getYear())
+// console.log(dateToday.getFullYear())
+// console.log(dateToday.getDay())
+// console.log(dateToday.getHours())
+// console.log(dateToday.getMinutes())
+// console.log(dateToday.getTime())
+
+
+

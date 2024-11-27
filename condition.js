@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	
-	<title>Document</title>
-</head>
-<body>
-	<script>
+
 // 		1. Given a string s consisting of words and spaces, return the length of the last word in the string.
 
 // Example 1:
@@ -71,12 +64,3 @@
 
 
 
-
-
-
-
-
-
-	</script>
-</body>
-</html>

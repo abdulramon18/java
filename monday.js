@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	
-	<title>Document</title>
-</head>
-<body>
 
-
-	
-
-
-
-	<script>
 				// 1
 				let a = 10
 				let b = 20
@@ -165,7 +152,3 @@
 
 
 
-	</script>
-	
-</body>
-</html>

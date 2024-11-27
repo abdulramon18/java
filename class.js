@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	
-	<title>Document</title>
-</head>
-<body>
-	<script>
 
 		let any = prompt('enter any word')
 		let palindromePair = ''
@@ -18,6 +10,3 @@
 				console.log('bad')
 			}
 		
-	</script>
-</body>
-</html> 
