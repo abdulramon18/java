@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	
-	<title>Document</title>
-
+	<title> JavaScript - for...in loop </title>
 </head>
-<style>
-	
-</style>
 <body>
-	<!-- var merge = function(nums1, m, nums2, n) {
-		let p1=m-1;
-		let p2=n-1;
-	   for(let i=m+n-1;i>=0;i--){
-			 if(p2>=0){
-				if(nums1[p1]>=nums2[p2] && p1>=0){
-					nums1[i]=nums1[p1];
-					p1--;
-				}
-				else  {
-					nums1[i]=nums2[p2];
-					p2--;
-				} 
-			 }  
-			}
-	}; -->
+    <p id = "output"> </p>
+    <script>
+        let output = document.getElementById("output");
+        let car = {
+            brand: "OD",
+            model: "Q7",
+            color: "Black",
+        }
+        for (key in car) {
+            car[key] = null;
+        }
+        output.innerHTML += "The updated object is - " + JSON.stringify(car);
+    </script>
 </body>
-	
-		
+</html>		
 
 
 		
