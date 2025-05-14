@@ -417,27 +417,27 @@
 	
 	//solution
 	
-	// let giveNum =22
+	let giveNum =22
 	
-	// if(giveNum & 1){
-	//     console.log('It is and odd number')
-	//     }else{
-	//         console.log("it is an even number")
-	//     }
-	// let number = 1234
-	// let numStr = String(number)
-	// let lastValue = numStr.slice(-1)
+	if(giveNum & 1){
+	    console.log('It is and odd number')
+	    }else{
+	        console.log("it is an even number")
+	    }
+	let number = 1234
+	let numStr = String(number)
+	let lastValue = numStr.slice(-1)
 	// if(lastValue==0||lastValue==2||lastValue==4||lastValue==6||lastValue==8){
 	//     // console.log("even number")
 	//     }else{
 	//         // console.log("odd Number")
 	//     }
-	// if(giveNum % 2 === 0){
-			// console.log("it is an even number")
-		// }else{
-		// console.log('It is and odd number')
+	if(giveNum % 2 === 0){
+			console.log("it is an even number")
+		}else{
+		console.log('It is and odd number')
 			
-		// }
+		}
 	
 	
 	
@@ -597,7 +597,7 @@
 	
 	
 	// =======================================================================================================================
-	// let action = 2
+	// le+. action = 2
 	
 	// function math(a,b){
 	//     if (action === 1){
@@ -1296,12 +1296,12 @@
 
 
 
-var searchInsert = function(nums, target) {
+const searchInsert = function(nums, target) {
     let one = 0
     let two = nums.length - 1
     
     while (one <= two) {
-        const mid = Math.floor((one + two) / 2)
+        const mid = Math.round((one + two) / 2)
         
         if (nums[mid] === target) {
             return mid
@@ -1316,7 +1316,7 @@ var searchInsert = function(nums, target) {
 
     
 }
-console.log(searchInsert([1, 2, 3, 5, 6,], 4))
+console.log(searchInsert([1, 2, 3, 5, 6,], 3))
 
 
 

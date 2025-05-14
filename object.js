@@ -104,7 +104,8 @@ let family = {
 				networth : '$1b',
 				gender: 'male',
 				occupatetion: 'project management and web dev',
-				children:[{
+				children:[
+					{
 					name: 'nabila adedokun',
 					age :6,
 					networth : "$100",
@@ -638,3 +639,4 @@ console.log(dateToday.getMinutes())
 
 
 
+.
